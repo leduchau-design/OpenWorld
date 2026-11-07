@@ -1,0 +1,63 @@
+{
+  "source_commit": "a3e3c03a583689fe83b2b784fae401d7241228e4",
+  "ci_job_url": "https://github.com/CocAgent/OpenWorld/actions/runs/40813009511/job/123247500695",
+  "sample": {
+    "cases": [
+      {
+        "decision_makers": 10,
+        "methods": {
+          "ecf": 0.8020833333333334,
+          "group_mean": 0.75,
+          "histogram4": 0.8541666666666666,
+          "no_summary": 0.75,
+          "rule_hold": 0.4166666666666667,
+          "rule_transfer": 0.75
+        },
+        "mode_hash": "06fdd0df4c4dd24a0c7fb6e07bc0036b2ea467a948a242013b2fd8259060cac8",
+        "oracle": 0.8541666666666666,
+        "registered_agents": 30,
+        "seed": 5101
+      },
+      {
+        "decision_makers": 10,
+        "methods": {
+          "ecf": 0.8020833333333334,
+          "group_mean": 0.75,
+          "histogram4": 0.8645833333333334,
+          "no_summary": 0.75,
+          "rule_hold": 0.4583333333333333,
+          "rule_transfer": 0.75
+        },
+        "mode_hash": "3ddfab45191f3b0f9e5b599fa751b02591bdfadd7145c0d3aa25109ea2f05f2b",
+        "oracle": 0.8645833333333334,
+        "registered_agents": 30,
+        "seed": 5102
+      },
+      {
+        "decision_makers": 10,
+        "methods": {
+          "ecf": 0.8125,
+          "group_mean": 0.75,
+          "histogram4": 0.8958333333333334,
+          "no_summary": 0.75,
+          "rule_hold": 0.5833333333333334,
+          "rule_transfer": 0.75
+        },
+        "mode_hash": "e8dc75f4d2c37889b5bd65aa77932f761b828bf11f00e686130d21ae9302412d",
+        "oracle": 0.8958333333333334,
+        "registered_agents": 30,
+        "seed": 5103
+      }
+    ],
+    "mean_holdout_reward": {
+      "ecf": 0.8055555555555557,
+      "group_mean": 0.75,
+      "histogram4": 0.8715277777777778,
+      "no_summary": 0.75,
+      "rule_hold": 0.48611111111111116,
+      "rule_transfer": 0.75
+    },
+    "schema": "openworld.p2.three-seed-holdout.v0",
+    "test_claim": "scripted 2-tick synthetic W3, not general MARL"
+  }
+}

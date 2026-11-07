@@ -1,0 +1,82 @@
+# Explicit manual-only research experiment. NO push/PR/schedule triggers.
+# WARNING: GitHub Actions runner minutes and network downloads may incur costs
+# depending on repository/account billing settings. Run only with owner approval.
+name: W5 PostgreSQL parity (manual research)
+
+on:
+  workflow_dispatch:
+    inputs:
+      budget_ack:
+        description: "Type YES_BUDGET_CHECKED after reviewing Actions billing and quota"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: openworld-w5-postgres-parity
+  cancel-in-progress: false
+
+jobs:
+  postgres-parity:
+    # Never start the hosted runner or PostgreSQL service from a different ref
+    # or without an explicit owner billing acknowledgement.
+    if: ${{ github.ref == 'refs/heads/main' && inputs.budget_ack == 'YES_BUDGET_CHECKED' }}
+    name: Disposable PostgreSQL parity
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: openworld_research
+          POSTGRES_PASSWORD: disposable-ci-password-not-a-secret
+          POSTGRES_DB: openworld_ephemeral_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U openworld_research -d openworld_ephemeral_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+    steps:
+      - name: Checkout pinned source revision
+        uses: actions/checkout@v5
+      - name: Set up supported Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Install opt-in PostgreSQL driver
+        run: python -m pip install "psycopg[binary]>=3,<4"
+      - name: Run same logical trace and two-connection race
+        env:
+          # All credentials are disposable CI-only and are not used anywhere else.
+          OPENWORLD_PG_TEST_ISOLATED: YES_EPHEMERAL_DB
+          OPENWORLD_PG_TEST_DSN: postgresql://openworld_research:disposable-ci-password-not-a-secret@localhost:5432/openworld_ephemeral_ci
+        run: python benchmarks/w5_storage_parity.py --with-postgres > w5-parity-result.json
+      - name: Attach GitHub workflow provenance (not cryptographic attestation)
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          path = Path("w5-parity-result.json")
+          report = json.loads(path.read_text(encoding="utf-8"))
+          report["execution"] = {
+              "git_sha": os.environ["GITHUB_SHA"],
+              "github_run_id": os.environ["GITHUB_RUN_ID"],
+          }
+          path.write_text(json.dumps(report, sort_keys=True, indent=2) + "\n", encoding="utf-8")
+          PY
+      - name: Validate exact W5 invariants and source reference
+        run: |
+          python scripts/verify_w5_pg_report.py w5-parity-result.json \
+            --expected-sha "$GITHUB_SHA" --expected-run-id "$GITHUB_RUN_ID"
+      - name: Upload synthetic benchmark report (no DSN)
+        uses: actions/upload-artifact@v4
+        with:
+          name: openworld-w5-sqlite-postgres-parity
+          path: w5-parity-result.json
+          retention-days: 7
+          if-no-files-found: error

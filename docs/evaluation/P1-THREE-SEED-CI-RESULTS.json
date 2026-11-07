@@ -1,0 +1,232 @@
+{
+  "schema": "openworld.p1.ci-holdout-results.v1",
+  "source": {
+    "repository": "CocAgent/OpenWorld",
+    "commit_sha": "cc011d6c63d79a3512fe4540a483592e1cac19d3",
+    "github_action": "https://github.com/CocAgent/OpenWorld/actions/runs/40800755089/job/123208032704",
+    "runner": "GitHub-hosted Python 3.11",
+    "suite_tests": 298
+  },
+  "setup": {
+    "agents": 30,
+    "train_ticks": 100,
+    "holdout_ticks": 40,
+    "seeds": [
+      4103,
+      4104,
+      4105
+    ],
+    "tasks": [
+      "mean",
+      "spectral"
+    ],
+    "regime": "balanced",
+    "simulated_outcomes": true,
+    "policy_training": "role-shared online logistic contextual bandit; chosen-action rewards",
+    "holdout_weights_frozen": true
+  },
+  "measured": {
+    "cases": [
+      {
+        "input_sha256": "7b8b1c04f59f9e15fa3d2fce6ded861e64081dab273a407e9a6bb1403c1023bc",
+        "methods": {
+          "ecf": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.0003941859999940789,
+            "regret": 0,
+            "reward": 0.8616666666666667
+          },
+          "group_mean": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.000024936999977853702,
+            "regret": 0,
+            "reward": 0.8616666666666667
+          },
+          "histogram8": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.00014040299998896444,
+            "regret": 0,
+            "reward": 0.8616666666666667
+          },
+          "no_summary": {
+            "accuracy": 0.4083333333333333,
+            "encode_p95_seconds": 0.00001887600001282408,
+            "regret": 0.41416666666666196,
+            "reward": 0.43916666666666665
+          }
+        },
+        "seed": 4103,
+        "task": "mean"
+      },
+      {
+        "input_sha256": "7b76fc9a3220a51220d71180b291f0841237b4b04f9814a82f3d5ac81b946048",
+        "methods": {
+          "ecf": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.0004014689999962684,
+            "regret": 0,
+            "reward": 0.8408333333333333
+          },
+          "group_mean": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.000026438999981337474,
+            "regret": 0,
+            "reward": 0.8408333333333333
+          },
+          "histogram8": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.00014894800000320174,
+            "regret": 0,
+            "reward": 0.8408333333333333
+          },
+          "no_summary": {
+            "accuracy": 0.49666666666666665,
+            "encode_p95_seconds": 0.00001813299999753326,
+            "regret": 0.35233333333332967,
+            "reward": 0.4825
+          }
+        },
+        "seed": 4104,
+        "task": "mean"
+      },
+      {
+        "input_sha256": "76672fd8ca34bdb9eb93db9c7ccc79d225066bac6993e6e083fe87723446d3b0",
+        "methods": {
+          "ecf": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.0003932740000038848,
+            "regret": 0,
+            "reward": 0.8416666666666667
+          },
+          "group_mean": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.000027660999990075652,
+            "regret": 0,
+            "reward": 0.8416666666666667
+          },
+          "histogram8": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.00016448699997795302,
+            "regret": 0,
+            "reward": 0.8416666666666667
+          },
+          "no_summary": {
+            "accuracy": 0.4691666666666667,
+            "encode_p95_seconds": 0.00001961600000299768,
+            "regret": 0.3715833333333293,
+            "reward": 0.4875
+          }
+        },
+        "seed": 4105,
+        "task": "mean"
+      },
+      {
+        "input_sha256": "8c161fdba00c965777039f0bf17f71efff5620c8ae7ed7f4ed04ef90d8334ac5",
+        "methods": {
+          "ecf": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.0004029520000017328,
+            "regret": 0,
+            "reward": 0.8433333333333334
+          },
+          "group_mean": {
+            "accuracy": 0.465,
+            "encode_p95_seconds": 0.000027782000017850805,
+            "regret": 0.37449999999999595,
+            "reward": 0.49166666666666664
+          },
+          "histogram8": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.00015505900000789552,
+            "regret": 0,
+            "reward": 0.8433333333333334
+          },
+          "no_summary": {
+            "accuracy": 0.4583333333333333,
+            "encode_p95_seconds": 0.00001993699999047749,
+            "regret": 0.37916666666666254,
+            "reward": 0.485
+          }
+        },
+        "seed": 4103,
+        "task": "spectral"
+      },
+      {
+        "input_sha256": "550c8236c65ba56ba5f34e365e2dbb4844cbaf2060c0215fae4d0c6271fc1185",
+        "methods": {
+          "ecf": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.0003979929999786691,
+            "regret": 0,
+            "reward": 0.8491666666666666
+          },
+          "group_mean": {
+            "accuracy": 0.4975,
+            "encode_p95_seconds": 0.000026219000005767157,
+            "regret": 0.35174999999999634,
+            "reward": 0.48
+          },
+          "histogram8": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.00015028100000336053,
+            "regret": 0,
+            "reward": 0.8491666666666666
+          },
+          "no_summary": {
+            "accuracy": 0.49333333333333335,
+            "encode_p95_seconds": 0.00001903599999764083,
+            "regret": 0.35466666666666297,
+            "reward": 0.48
+          }
+        },
+        "seed": 4104,
+        "task": "spectral"
+      },
+      {
+        "input_sha256": "cc90635020eaa0c09275f70c021860d90aafe9647c16348195c06ae60a0ff48e",
+        "methods": {
+          "ecf": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.00038721300001043346,
+            "regret": 0,
+            "reward": 0.85
+          },
+          "group_mean": {
+            "accuracy": 0.42333333333333334,
+            "encode_p95_seconds": 0.000026800000000548607,
+            "regret": 0.4036666666666621,
+            "reward": 0.44333333333333336
+          },
+          "histogram8": {
+            "accuracy": 1,
+            "encode_p95_seconds": 0.00015338700001166217,
+            "regret": 0,
+            "reward": 0.85
+          },
+          "no_summary": {
+            "accuracy": 0.425,
+            "encode_p95_seconds": 0.00001961699999242228,
+            "regret": 0.4024999999999955,
+            "reward": 0.445
+          }
+        },
+        "seed": 4105,
+        "task": "spectral"
+      }
+    ],
+    "elapsed_wall_seconds": 7.591337820999996,
+    "environment": {
+      "cpu_count": 4,
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.43",
+      "python": "3.11.17",
+      "tracemalloc_peak_bytes": 664992
+    },
+    "schema": "openworld.p1.population-bandit.v1"
+  },
+  "limitations": [
+    "Synthetic labels favor ECF for spectral and group mean for mean; histogram can encode both",
+    "No reinforcement-learning world dynamics, strategic adaptation or nonstationary ecology",
+    "Peak tracemalloc is Python allocation, not total process RSS; timings are runner-specific",
+    "No privacy guarantee for group-level summaries or externally authenticated identity"
+  ]
+}

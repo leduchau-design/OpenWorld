@@ -1,0 +1,13 @@
+# Demo script for OpenWorld Playground
+status
+create charlie 10 mid owner1
+connect alice charlie
+connect bob charlie
+weather north rain
+transfer alice charlie 1
+signal charlie bob
+tick
+ask alice "Hello Alice, what is your plan for cooperating with Charlie?"
+memory alice
+replay
+status

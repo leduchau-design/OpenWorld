@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openworld.example/spec/event-envelope-v1.schema.json",
+  "title": "OpenWorld Event Envelope v1 — reference draft",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "stream_id",
+    "sequence_number",
+    "event_id",
+    "owner_id",
+    "agent_id",
+    "timestamp_utc",
+    "event_type",
+    "provenance",
+    "payload_encoding",
+    "payload_digest"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "stream_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sequence_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "owner_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agent_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timestamp_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "event_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance": {
+      "enum": [
+        "OBSERVED_RECORDED",
+        "VERIFIED",
+        "INFERRED",
+        "SIMULATED",
+        "UNAVAILABLE"
+      ]
+    },
+    "payload_encoding": {
+      "enum": [
+        "base64",
+        "utf8"
+      ]
+    },
+    "payload_digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "verification_context": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "causal_parent_event_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "retention_class": {
+      "type": "string"
+    },
+    "capability_grant_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

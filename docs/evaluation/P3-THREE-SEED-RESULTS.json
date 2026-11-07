@@ -1,0 +1,218 @@
+{
+  "format": "openworld.w5.p3.pinned-results.v0",
+  "origin": {
+    "commit_sha": "284289b9f814cb3f19f42876db879b7a9170e6ec",
+    "github_job": "https://github.com/CocAgent/OpenWorld/actions/runs/40815028595/job/123253975518",
+    "python": "GitHub Actions Python 3.11",
+    "repository_tests": 394,
+    "source": "stdout from exact-head measured subprocess unit test"
+  },
+  "measured": {
+    "cases": [
+      {
+        "initial_world_hashes": [
+          "8b0fdecb34ad64ddd4e73639c0ecb4f5c911330db469fe8ff0dfb79c75b80108",
+          "57a3fc05fa1b7b1689cf0dd1c22e7043211f23dff4ce09454ecf348bcaec5d01",
+          "8b0fdecb34ad64ddd4e73639c0ecb4f5c911330db469fe8ff0dfb79c75b80108",
+          "88b4724a05abee0c07a14e90a60fb9c04f830c2e15597adf6d65bb0175569df8"
+        ],
+        "methods": {
+          "always_reciprocate": {
+            "donor_reward": 0.6,
+            "joint_reward": 0.575,
+            "offers": 160,
+            "receiver_reward": 0.5499999999999999,
+            "returns": 160
+          },
+          "ecf": {
+            "donor_reward": 0.06,
+            "joint_reward": 0.057499999999999996,
+            "offers": 16,
+            "receiver_reward": 0.05499999999999999,
+            "returns": 16
+          },
+          "group_mean": {
+            "donor_reward": 0.12,
+            "joint_reward": 0.11499999999999999,
+            "offers": 32,
+            "receiver_reward": 0.10999999999999999,
+            "returns": 32
+          },
+          "histogram4": {
+            "donor_reward": 0.09,
+            "joint_reward": 0.08625,
+            "offers": 24,
+            "receiver_reward": 0.08249999999999999,
+            "returns": 24
+          },
+          "hold": {
+            "donor_reward": 0,
+            "joint_reward": 0,
+            "offers": 0,
+            "receiver_reward": 0,
+            "returns": 0
+          },
+          "no_summary": {
+            "donor_reward": 0.18,
+            "joint_reward": 0.1725,
+            "offers": 48,
+            "receiver_reward": 0.16499999999999998,
+            "returns": 48
+          }
+        },
+        "seed": 7101
+      },
+      {
+        "initial_world_hashes": [
+          "8874ec3158b6c0e90c8c76ea965ff949fb7c28c93bf622fb909af58a2a9998f6",
+          "2880204e16217618c31dcf076304ec4eb0f84ddc75a846583b17784d3f21ff47",
+          "2880204e16217618c31dcf076304ec4eb0f84ddc75a846583b17784d3f21ff47",
+          "99f43e0d1623be753fc958bffb3426930946b8f91947b06002f0605a16598fb7"
+        ],
+        "methods": {
+          "always_reciprocate": {
+            "donor_reward": 0.6,
+            "joint_reward": 0.575,
+            "offers": 160,
+            "receiver_reward": 0.5499999999999999,
+            "returns": 160
+          },
+          "ecf": {
+            "donor_reward": 0.0525,
+            "joint_reward": 0.050312499999999996,
+            "offers": 14,
+            "receiver_reward": 0.048124999999999994,
+            "returns": 14
+          },
+          "group_mean": {
+            "donor_reward": 0.075,
+            "joint_reward": 0.071875,
+            "offers": 20,
+            "receiver_reward": 0.06874999999999999,
+            "returns": 20
+          },
+          "histogram4": {
+            "donor_reward": 0.0675,
+            "joint_reward": 0.0646875,
+            "offers": 18,
+            "receiver_reward": 0.06187499999999999,
+            "returns": 18
+          },
+          "hold": {
+            "donor_reward": 0,
+            "joint_reward": 0,
+            "offers": 0,
+            "receiver_reward": 0,
+            "returns": 0
+          },
+          "no_summary": {
+            "donor_reward": 0.2475,
+            "joint_reward": 0.2371875,
+            "offers": 66,
+            "receiver_reward": 0.22687499999999997,
+            "returns": 66
+          }
+        },
+        "seed": 7102
+      },
+      {
+        "initial_world_hashes": [
+          "12282c87ec5d4b452908f5ce9625ac1b004888f0f338f78680746384045b8da2",
+          "12282c87ec5d4b452908f5ce9625ac1b004888f0f338f78680746384045b8da2",
+          "ff77ea4da638a5156045a083d66529868862599a56b1a442a7dfa208b8dedc16",
+          "45f95c1757a819014157717467e777611cd0a0c36df8dcf8d8c22e0b5fefde21"
+        ],
+        "methods": {
+          "always_reciprocate": {
+            "donor_reward": 0.6,
+            "joint_reward": 0.575,
+            "offers": 160,
+            "receiver_reward": 0.5499999999999999,
+            "returns": 160
+          },
+          "ecf": {
+            "donor_reward": 0.03,
+            "joint_reward": 0.028749999999999998,
+            "offers": 8,
+            "receiver_reward": 0.027499999999999997,
+            "returns": 8
+          },
+          "group_mean": {
+            "donor_reward": 0.0659375,
+            "joint_reward": 0.06328125,
+            "offers": 19,
+            "receiver_reward": 0.06062499999999999,
+            "returns": 18
+          },
+          "histogram4": {
+            "donor_reward": 0.0525,
+            "joint_reward": 0.050312499999999996,
+            "offers": 14,
+            "receiver_reward": 0.048124999999999994,
+            "returns": 14
+          },
+          "hold": {
+            "donor_reward": 0,
+            "joint_reward": 0,
+            "offers": 0,
+            "receiver_reward": 0,
+            "returns": 0
+          },
+          "no_summary": {
+            "donor_reward": 0.1934375,
+            "joint_reward": 0.18546875,
+            "offers": 53,
+            "receiver_reward": 0.1775,
+            "returns": 52
+          }
+        },
+        "seed": 7103
+      }
+    ],
+    "holdout_episodes_per_seed": 4,
+    "mean_holdout_reward": {
+      "always_reciprocate": {
+        "donor_reward": 0.6,
+        "joint_reward": 0.575,
+        "receiver_reward": 0.5499999999999999
+      },
+      "ecf": {
+        "donor_reward": 0.047499999999999994,
+        "joint_reward": 0.04552083333333332,
+        "receiver_reward": 0.043541666666666666
+      },
+      "group_mean": {
+        "donor_reward": 0.08697916666666666,
+        "joint_reward": 0.08338541666666666,
+        "receiver_reward": 0.07979166666666665
+      },
+      "histogram4": {
+        "donor_reward": 0.06999999999999999,
+        "joint_reward": 0.06708333333333333,
+        "receiver_reward": 0.06416666666666666
+      },
+      "hold": {
+        "donor_reward": 0,
+        "joint_reward": 0,
+        "receiver_reward": 0
+      },
+      "no_summary": {
+        "donor_reward": 0.2069791666666667,
+        "joint_reward": 0.19838541666666665,
+        "receiver_reward": 0.18979166666666666
+      }
+    },
+    "rounds_per_episode": 4,
+    "schema": "openworld.w5.p3.three-seed.v0",
+    "scope": "synthetic single-owner 20 independent learners, 8 ticks/episode",
+    "train_episodes_per_seed": 8,
+    "wall_seconds": 0.5272954020000213
+  },
+  "limits": [
+    "Synthetic one-owner W3 world with engineered rewards",
+    "20 independently learning actors and 10 registered passive actors",
+    "Four 8-tick held-out episodes per seed; 8 training episodes",
+    "Only 3 seeds and 6 methods; no independent real-world validation",
+    "No process RSS, p95 total-tick throughput or adversarial policy shifts"
+  ]
+}

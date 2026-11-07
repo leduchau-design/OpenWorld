@@ -1,0 +1,57 @@
+# Minimal, dependency-free validation for OpenWorld's supported Python.
+# This workflow is deliberately single-job to avoid redundant GitHub Actions usage.
+name: Python validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit-tests:
+    name: Unit tests (Python 3.11)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Set up supported Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Validate Python syntax
+        run: python -m compileall -q src tests benchmarks examples
+      - name: Run all repository unit tests including research matrices
+        env:
+          OPENWORLD_SLOW_TESTS: "1"
+        run: python -m unittest discover -s tests -v
+      - name: Run R0 demo and check replay, provenance and exact memory
+        run: |
+          python examples/r0_agent_cycle.py > /tmp/openworld-r0-demo.json
+          python - <<'PY'
+          import json
+          with open("/tmp/openworld-r0-demo.json", encoding="utf-8") as handle:
+              result = json.load(handle)
+          assert result["world_replay"] == "PASS"
+          assert result["owners"] == 1 and result["agents"] == 2
+          assert [c["action"] for c in result["cycles"]] == [
+              "transfer", "signal", "transfer"
+          ]
+          assert all(c["replay"] == "PASS" for c in result["cycles"])
+          assert all(c["world_observation_provenance"] == "SIMULATED"
+                     and c["prediction_provenance"] == "INFERRED"
+                     and c["memory_event_id"].startswith("r0-simulated-feedback-")
+                     for c in result["cycles"])
+          assert "NOT atomic" in result["limits"]
+          print("PASS: bounded synthetic R0 replay/provenance walkthrough")
+          PY
+      - name: Check repository layout
+        run: python scripts/check_repository.py

@@ -1,0 +1,4189 @@
+{
+  "schema": "openworld.w5.p5.measured-100-cases.v0",
+  "source": {
+    "commit_sha": "bfaf81a6dde1fbd4cf55aa5e4ec8ea6d892c5288",
+    "run": "https://github.com/CocAgent/OpenWorld/actions/runs/40822991087/job/123279474111",
+    "python": "3.11.17",
+    "repository_unittest": "425 tests run, 1 skipped, 2 expected failures, zero unexpected failures",
+    "origin": "Complete CI-emitted P5_W5_META and P5_W5_CASE lines"
+  },
+  "metadata": {
+    "cases": 100,
+    "environment": {
+      "cpu_count": 4,
+      "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.43",
+      "python": "3.11.17",
+      "ru_maxrss": 31996,
+      "ru_maxrss_units": "KiB on Linux; bytes on macOS"
+    },
+    "process_cpu_seconds": 0.942338325,
+    "schema": "openworld.p5.local-risk-probing.v0",
+    "seeds": [
+      9101,
+      9102,
+      9103,
+      9104,
+      9105
+    ],
+    "wall_seconds": 0.9448846509999953
+  },
+  "cases": [
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "ff1c8ccb3676e110ebbfb5936f9a04784a2c06deab2ce2ea73ceb882546a34af",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011458000003017332,
+      "router_tick_p95_seconds": 0.000019369999989748976,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "779689d7126778e131d22a56015ca6ea899b44ec862fac057ea52c13ff888509",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00036848200001315945,
+      "router_tick_p95_seconds": 0.0004150069999866446,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "779689d7126778e131d22a56015ca6ea899b44ec862fac057ea52c13ff888509",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00037160149999238,
+      "router_tick_p95_seconds": 0.0004170100000067123,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "779689d7126778e131d22a56015ca6ea899b44ec862fac057ea52c13ff888509",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        20,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00037273799999582025,
+      "router_tick_p95_seconds": 0.00046960000000240143,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "ff1c8ccb3676e110ebbfb5936f9a04784a2c06deab2ce2ea73ceb882546a34af",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011176999990425429,
+      "router_tick_p95_seconds": 0.000019989999998415442,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        80,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "31ca32161f50b7b01c07ce4a994f34a470695c8be39c17eb53ac6afced29e927",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 80,
+      "offered_by_phase": [
+        80,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.2,
+        0
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.1,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001651499999866246,
+      "router_tick_p95_seconds": 0.00042385099999364684,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        80,
+        0
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        20,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "43e49a6316bed73c9f389d21e95424e22db0686c689d9f87335fb16f522042f1",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 20,
+      "offered_by_phase": [
+        20,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.05,
+        0
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.025,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000012818999991281999,
+      "router_tick_p95_seconds": 0.000029754999985698305,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        20,
+        0
+      ],
+      "worst_phase_reward": -0.05
+    },
+    {
+      "accepted_by_phase": [
+        30,
+        20
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "6885b29cc8e95cb5aa05c4505602557f6e55a518c925c312bb7f425822d0d366",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 50,
+      "offered_by_phase": [
+        30,
+        20
+      ],
+      "phase_reward_per_decision": [
+        -0.075,
+        -0.05
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        30,
+        20
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.0625,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000014396999986843184,
+      "router_tick_p95_seconds": 0.000356248000002779,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        30,
+        20
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "ff1c8ccb3676e110ebbfb5936f9a04784a2c06deab2ce2ea73ceb882546a34af",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001699999999971169,
+      "router_tick_p95_seconds": 0.000020431000024245805,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        80
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "e365d130664e836bcf072f3033993556fd6e3ae578539b6e13cc7a60aac62191",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 180,
+      "offered_by_phase": [
+        100,
+        80
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.2
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003494174999900679,
+      "router_tick_p95_seconds": 0.0003718909999861353,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        80
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        80
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "e365d130664e836bcf072f3033993556fd6e3ae578539b6e13cc7a60aac62191",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 180,
+      "offered_by_phase": [
+        100,
+        80
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.2
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00035326350000275397,
+      "router_tick_p95_seconds": 0.00037746999998944375,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        80
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        30
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "fd03005007f4d2b14e8e6f22570dac62a1d593c9e10ab72c7cbef6180326a427",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 130,
+      "offered_by_phase": [
+        100,
+        30
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.075
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        20,
+        10
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2625,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00034342450001645375,
+      "router_tick_p95_seconds": 0.00038717499998597305,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        30
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "ff1c8ccb3676e110ebbfb5936f9a04784a2c06deab2ce2ea73ceb882546a34af",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011602000000721091,
+      "router_tick_p95_seconds": 0.000013900999988436524,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        80,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "31ca32161f50b7b01c07ce4a994f34a470695c8be39c17eb53ac6afced29e927",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 80,
+      "offered_by_phase": [
+        80,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.2,
+        0
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.1,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000016420000008565694,
+      "router_tick_p95_seconds": 0.0003530440000076851,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        80,
+        0
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        20,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "43e49a6316bed73c9f389d21e95424e22db0686c689d9f87335fb16f522042f1",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 20,
+      "offered_by_phase": [
+        20,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.05,
+        0
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.025,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000012759500009451585,
+      "router_tick_p95_seconds": 0.000019780000002356246,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        20,
+        0
+      ],
+      "worst_phase_reward": -0.05
+    },
+    {
+      "accepted_by_phase": [
+        30,
+        60
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "10d9784bf79002b2ad717e1834bf4e27b6fe753b57324456c5fa34dc48cdc2b2",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 90,
+      "offered_by_phase": [
+        30,
+        60
+      ],
+      "phase_reward_per_decision": [
+        -0.075,
+        0.36
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        30,
+        20
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        60
+      ],
+      "reward_per_decision": 0.1425,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0000161400000138201,
+      "router_tick_p95_seconds": 0.00036615299998743467,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        30,
+        0
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "ff1c8ccb3676e110ebbfb5936f9a04784a2c06deab2ce2ea73ceb882546a34af",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001134199999341945,
+      "router_tick_p95_seconds": 0.00001379099998644051,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        59
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "7dbbb6376de66543bca8d847f7df855f430f9d06c1fa5f5655dc8527d44ba502",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 159,
+      "offered_by_phase": [
+        100,
+        59
+      ],
+      "phase_reward_per_decision": [
+        0.16649999999999998,
+        0.11599999999999999
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        49,
+        31
+      ],
+      "reward_per_decision": 0.14125,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0002515949999803979,
+      "router_tick_p95_seconds": 0.00037647899998205503,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        51,
+        28
+      ],
+      "worst_phase_reward": 0.11599999999999999
+    },
+    {
+      "accepted_by_phase": [
+        82,
+        44
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "f3c3cf4968c5b929ab570da7131ad2ce3eda29f5319d5ebc12841488b2edda05",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 126,
+      "offered_by_phase": [
+        82,
+        44
+      ],
+      "phase_reward_per_decision": [
+        0.135,
+        0.06849999999999999
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        40,
+        21
+      ],
+      "reward_per_decision": 0.10175,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00020030800000370164,
+      "router_tick_p95_seconds": 0.000308095999997704,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        42,
+        23
+      ],
+      "worst_phase_reward": 0.06849999999999999
+    },
+    {
+      "accepted_by_phase": [
+        38,
+        33
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "94eae61f9fc84428415f40a4b611f4bd5ab07608437da939ef386c81dcdec52b",
+      "input_world_sha256": "31e7e980a09d9ec559e09487b652616b33e32ea499bf4ca8904a2ab3323a5802",
+      "observed_feedback_count": 71,
+      "offered_by_phase": [
+        38,
+        33
+      ],
+      "phase_reward_per_decision": [
+        0.032499999999999994,
+        0.06199999999999999
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        30,
+        20
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        15,
+        17
+      ],
+      "reward_per_decision": 0.04724999999999999,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00005945950000807443,
+      "router_tick_p95_seconds": 0.00035331399999449786,
+      "seed": 9101,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        23,
+        16
+      ],
+      "worst_phase_reward": 0.032499999999999994
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "22fb91b7feff74998a7d71711976b4cacb1728d92014f58b3454ed82afb859ed",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011461999989137439,
+      "router_tick_p95_seconds": 0.000013389999992341473,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "a4be0efca59498d85477d738acd6ed33e0fffa70de7bbbccb344768a85f5a733",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003751569999934645,
+      "router_tick_p95_seconds": 0.0004053419999934249,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "a4be0efca59498d85477d738acd6ed33e0fffa70de7bbbccb344768a85f5a733",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003761179999912656,
+      "router_tick_p95_seconds": 0.0004078059999983452,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "a4be0efca59498d85477d738acd6ed33e0fffa70de7bbbccb344768a85f5a733",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        20,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003850774999989426,
+      "router_tick_p95_seconds": 0.00043967400000610724,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "22fb91b7feff74998a7d71711976b4cacb1728d92014f58b3454ed82afb859ed",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011562000011622331,
+      "router_tick_p95_seconds": 0.00001404200000365563,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        80,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "f4b186f45fbf9acb57ddd7287390cf78aa012a368811791795ec93a01f4766db",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 80,
+      "offered_by_phase": [
+        80,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.2,
+        0
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.1,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000017340999988846306,
+      "router_tick_p95_seconds": 0.00036734500000079606,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        80,
+        0
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        20,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "f7f0d92d915f0e03f324a763ec77cd59573b06b7adaa318dcd5ac20ccee65359",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 20,
+      "offered_by_phase": [
+        20,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.05,
+        0
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.025,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000012875000010126314,
+      "router_tick_p95_seconds": 0.000024757000005593,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        20,
+        0
+      ],
+      "worst_phase_reward": -0.05
+    },
+    {
+      "accepted_by_phase": [
+        30,
+        20
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "575e05d9451bb5294d4b40d6a460fb5359acee59c2c65e4dc085427d638a5d0d",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 50,
+      "offered_by_phase": [
+        30,
+        20
+      ],
+      "phase_reward_per_decision": [
+        -0.075,
+        -0.05
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        30,
+        20
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.0625,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000014957499999468382,
+      "router_tick_p95_seconds": 0.00036498099998993894,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        30,
+        20
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "22fb91b7feff74998a7d71711976b4cacb1728d92014f58b3454ed82afb859ed",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011567000001377892,
+      "router_tick_p95_seconds": 0.000013229999979103013,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        80
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "32d29bad82a79363c69569d66683d56c7b60cd2ad9c2a1c1cf9edc740d17fe2a",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 180,
+      "offered_by_phase": [
+        100,
+        80
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.2
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003625729999896521,
+      "router_tick_p95_seconds": 0.000383780000021261,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        80
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        80
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "32d29bad82a79363c69569d66683d56c7b60cd2ad9c2a1c1cf9edc740d17fe2a",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 180,
+      "offered_by_phase": [
+        100,
+        80
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.2
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00036005399999794463,
+      "router_tick_p95_seconds": 0.0003839900000173202,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        80
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        30
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "1f0df75a6330719d90eb8ac40ac134a44df8e5d0e3effb043273365f29f91905",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 130,
+      "offered_by_phase": [
+        100,
+        30
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.075
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        20,
+        10
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2625,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00035294350000469876,
+      "router_tick_p95_seconds": 0.00038179700001705896,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        30
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "22fb91b7feff74998a7d71711976b4cacb1728d92014f58b3454ed82afb859ed",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011272000008943905,
+      "router_tick_p95_seconds": 0.000013430000024072797,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        80,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "f4b186f45fbf9acb57ddd7287390cf78aa012a368811791795ec93a01f4766db",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 80,
+      "offered_by_phase": [
+        80,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.2,
+        0
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.1,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000016740000006620903,
+      "router_tick_p95_seconds": 0.00035334399998987465,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        80,
+        0
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        20,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "f7f0d92d915f0e03f324a763ec77cd59573b06b7adaa318dcd5ac20ccee65359",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 20,
+      "offered_by_phase": [
+        20,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.05,
+        0
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.025,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000012428499999828091,
+      "router_tick_p95_seconds": 0.00001955999999836422,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        20,
+        0
+      ],
+      "worst_phase_reward": -0.05
+    },
+    {
+      "accepted_by_phase": [
+        30,
+        60
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "bd9b6f98c5fce7a2f3b59cdd25b8ac8473bb016de40d358889d2d2658a9ca72b",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 90,
+      "offered_by_phase": [
+        30,
+        60
+      ],
+      "phase_reward_per_decision": [
+        -0.075,
+        0.36
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        30,
+        20
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        60
+      ],
+      "reward_per_decision": 0.1425,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001613450000093053,
+      "router_tick_p95_seconds": 0.00035781099998644095,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        30,
+        0
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "22fb91b7feff74998a7d71711976b4cacb1728d92014f58b3454ed82afb859ed",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011251999993078243,
+      "router_tick_p95_seconds": 0.000013069999994286263,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        99,
+        50
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "deb4609c64e67e6cae9c8760bd88ac2e72a04899c175bf5cc804a1ee33257bb2",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 149,
+      "offered_by_phase": [
+        99,
+        50
+      ],
+      "phase_reward_per_decision": [
+        0.16899999999999998,
+        0.0535
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        49,
+        21
+      ],
+      "reward_per_decision": 0.11125,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00019674199998576114,
+      "router_tick_p95_seconds": 0.0003477360000090357,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        50,
+        29
+      ],
+      "worst_phase_reward": 0.0535
+    },
+    {
+      "accepted_by_phase": [
+        63,
+        40
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "b79ae596ea3bca3d79aa4d63cc1a6889ed7903c320f56298f131905cfb11ac5e",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 103,
+      "offered_by_phase": [
+        63,
+        40
+      ],
+      "phase_reward_per_decision": [
+        0.12299999999999998,
+        0.06149999999999999
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        33,
+        19
+      ],
+      "reward_per_decision": 0.09225,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00016165949999447093,
+      "router_tick_p95_seconds": 0.00022248700000204735,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        30,
+        21
+      ],
+      "worst_phase_reward": 0.06149999999999999
+    },
+    {
+      "accepted_by_phase": [
+        49,
+        37
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "8c3ff748f1aa66dc987c475fa7a13b9bf56b99b3c007149bb5af31670bb9ddc6",
+      "input_world_sha256": "25d7d59ba184784264d95a702234b09adc6545eaf7b9f21cb0a947f71e891db6",
+      "observed_feedback_count": 86,
+      "offered_by_phase": [
+        49,
+        37
+      ],
+      "phase_reward_per_decision": [
+        0.08149999999999999,
+        0.06899999999999999
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        28,
+        17
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        24,
+        19
+      ],
+      "reward_per_decision": 0.07525,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00009645549999959258,
+      "router_tick_p95_seconds": 0.00036272799999892413,
+      "seed": 9102,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        25,
+        18
+      ],
+      "worst_phase_reward": 0.06899999999999999
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "b2ae6da75416aa19c3e9c94312815c3c7983f6b97457fc24405094e77d08cf9d",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011617500007332637,
+      "router_tick_p95_seconds": 0.000013900999988436524,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "4b7651ab35f00f5b4174c3b8e0ee5c2eb594cea1deb8379c1ff733fd1196bcad",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003795479999979534,
+      "router_tick_p95_seconds": 0.0004105409999795029,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "4b7651ab35f00f5b4174c3b8e0ee5c2eb594cea1deb8379c1ff733fd1196bcad",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003836300000017445,
+      "router_tick_p95_seconds": 0.00041594800001121257,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "4b7651ab35f00f5b4174c3b8e0ee5c2eb594cea1deb8379c1ff733fd1196bcad",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        20,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003843464999988555,
+      "router_tick_p95_seconds": 0.00041052000000263433,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "b2ae6da75416aa19c3e9c94312815c3c7983f6b97457fc24405094e77d08cf9d",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011492999988149677,
+      "router_tick_p95_seconds": 0.000013760000001639128,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        80,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "84fb1b590cf8e8c13420a7d1d0fd9d4ebdace7a51b39808705acb7f72d2f29b9",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 80,
+      "offered_by_phase": [
+        80,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.2,
+        0
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.1,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001679999999737447,
+      "router_tick_p95_seconds": 0.00037346400000615176,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        80,
+        0
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        20,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "bb46b0bd7737ff53cc08d44f3d856bedb63cd889eea8da6c1650e7eb49afc25c",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 20,
+      "offered_by_phase": [
+        20,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.05,
+        0
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.025,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000012788999995905215,
+      "router_tick_p95_seconds": 0.000026839999975436513,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        20,
+        0
+      ],
+      "worst_phase_reward": -0.05
+    },
+    {
+      "accepted_by_phase": [
+        30,
+        20
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "cb9ab8a6d9dcbf4fe951624120b65438f2e3e7524ea2bf51f813df1088a32a15",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 50,
+      "offered_by_phase": [
+        30,
+        20
+      ],
+      "phase_reward_per_decision": [
+        -0.075,
+        -0.05
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        30,
+        20
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.0625,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000014812999992841469,
+      "router_tick_p95_seconds": 0.0003661629999953675,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        30,
+        20
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "b2ae6da75416aa19c3e9c94312815c3c7983f6b97457fc24405094e77d08cf9d",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001138749999540778,
+      "router_tick_p95_seconds": 0.00001353000001813598,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        80
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "710d332eb1424bef27b567bc23ccc13abb92b23996915e2634614913a7272589",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 180,
+      "offered_by_phase": [
+        100,
+        80
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.2
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00035969299999294435,
+      "router_tick_p95_seconds": 0.00037937400000487287,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        80
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        80
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "710d332eb1424bef27b567bc23ccc13abb92b23996915e2634614913a7272589",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 180,
+      "offered_by_phase": [
+        100,
+        80
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.2
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00035742500000424116,
+      "router_tick_p95_seconds": 0.00038889799998287344,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        80
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        30
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "1a82a95f34bb0747fc107cc0b26c1c8b3a9d502debaf4d78d423c66772e1a493",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 130,
+      "offered_by_phase": [
+        100,
+        30
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.075
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        20,
+        10
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2625,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003488174999972671,
+      "router_tick_p95_seconds": 0.0003818469999998797,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        30
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "b2ae6da75416aa19c3e9c94312815c3c7983f6b97457fc24405094e77d08cf9d",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001119200001653553,
+      "router_tick_p95_seconds": 0.000013419999987718256,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        80,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "84fb1b590cf8e8c13420a7d1d0fd9d4ebdace7a51b39808705acb7f72d2f29b9",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 80,
+      "offered_by_phase": [
+        80,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.2,
+        0
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.1,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000016193999996971797,
+      "router_tick_p95_seconds": 0.00035605799999416377,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        80,
+        0
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        20,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "bb46b0bd7737ff53cc08d44f3d856bedb63cd889eea8da6c1650e7eb49afc25c",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 20,
+      "offered_by_phase": [
+        20,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.05,
+        0
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.025,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000012473500007104121,
+      "router_tick_p95_seconds": 0.00001906899998971312,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        20,
+        0
+      ],
+      "worst_phase_reward": -0.05
+    },
+    {
+      "accepted_by_phase": [
+        30,
+        60
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "3f269c9390bb46a1514ecb1ea4dbe9a8b0cbd9dbfe4d3f25e58bd840cbb1ba1d",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 90,
+      "offered_by_phase": [
+        30,
+        60
+      ],
+      "phase_reward_per_decision": [
+        -0.075,
+        0.36
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        30,
+        20
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        60
+      ],
+      "reward_per_decision": 0.1425,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000015613499996902647,
+      "router_tick_p95_seconds": 0.0003651719999879788,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        30,
+        0
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "b2ae6da75416aa19c3e9c94312815c3c7983f6b97457fc24405094e77d08cf9d",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011316999973587372,
+      "router_tick_p95_seconds": 0.000013249999994968675,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        99,
+        47
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "0f731210618d126afbea19e027e575fd2d2c081c35882dd41ac455aa100f51c6",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 146,
+      "offered_by_phase": [
+        99,
+        47
+      ],
+      "phase_reward_per_decision": [
+        0.12649999999999997,
+        0.08649999999999998
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        44,
+        24
+      ],
+      "reward_per_decision": 0.10649999999999998,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00019501449999381748,
+      "router_tick_p95_seconds": 0.00035113100000216946,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        55,
+        23
+      ],
+      "worst_phase_reward": 0.08649999999999998
+    },
+    {
+      "accepted_by_phase": [
+        83,
+        45
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "0e7854df82084f72926ad9ab0c21a2430f0df6473d5703e572630f3182db4ccc",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 128,
+      "offered_by_phase": [
+        83,
+        45
+      ],
+      "phase_reward_per_decision": [
+        0.1325,
+        0.08299999999999999
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        40,
+        23
+      ],
+      "reward_per_decision": 0.10774999999999998,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0001963520000032304,
+      "router_tick_p95_seconds": 0.0002915110000003551,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        43,
+        22
+      ],
+      "worst_phase_reward": 0.08299999999999999
+    },
+    {
+      "accepted_by_phase": [
+        43,
+        33
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "087e33ab79f9c79114761a69a7c620cbf77994adc21dc3f89199aad16cc482ca",
+      "input_world_sha256": "623d8c7291fdcf07d5c63dd14737f3a2545b4912e03f35dbbbdf46e845db8f43",
+      "observed_feedback_count": 76,
+      "offered_by_phase": [
+        43,
+        33
+      ],
+      "phase_reward_per_decision": [
+        0.071,
+        0.0535
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        29,
+        18
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        21,
+        16
+      ],
+      "reward_per_decision": 0.06225,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00006011099999625458,
+      "router_tick_p95_seconds": 0.00034635299999763447,
+      "seed": 9103,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        22,
+        17
+      ],
+      "worst_phase_reward": 0.0535
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "1ef9d6224d05edd9fad7d9c550fd2ebd11de1eeec78f828db66740e8ff8963c0",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011196999992080237,
+      "router_tick_p95_seconds": 0.000013379999984408641,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "1dc6d0cb58fdb8da49fa9add793177796c231b2e7ba1742f2c11692195f1457a",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003668945000185886,
+      "router_tick_p95_seconds": 0.00039688000001092405,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "1dc6d0cb58fdb8da49fa9add793177796c231b2e7ba1742f2c11692195f1457a",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003668789999977662,
+      "router_tick_p95_seconds": 0.00039761100001101113,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "1dc6d0cb58fdb8da49fa9add793177796c231b2e7ba1742f2c11692195f1457a",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        20,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003710809999972753,
+      "router_tick_p95_seconds": 0.00039850199999591496,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "1ef9d6224d05edd9fad7d9c550fd2ebd11de1eeec78f828db66740e8ff8963c0",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011322000005975497,
+      "router_tick_p95_seconds": 0.000013480000006893533,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        80,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "69f500151f33590cc18e7753e82f7be9e5bdaeeb27bce292dfc732ed26bd9f82",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 80,
+      "offered_by_phase": [
+        80,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.2,
+        0
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.1,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000016339500007234165,
+      "router_tick_p95_seconds": 0.00036480200000710283,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        80,
+        0
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        20,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "2629359085cc1f106257ecbebb6918db47757bc69b71397cb4b0cd28fa6aaa16",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 20,
+      "offered_by_phase": [
+        20,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.05,
+        0
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.025,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001270399998531957,
+      "router_tick_p95_seconds": 0.00001658499999734886,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        20,
+        0
+      ],
+      "worst_phase_reward": -0.05
+    },
+    {
+      "accepted_by_phase": [
+        30,
+        20
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "de5076caf66ffe506b2cea5a3d8c55e0a1baedfc60218bf3a27ce10f19afce47",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 50,
+      "offered_by_phase": [
+        30,
+        20
+      ],
+      "phase_reward_per_decision": [
+        -0.075,
+        -0.05
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        30,
+        20
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.0625,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000014456999991807606,
+      "router_tick_p95_seconds": 0.00035401499999920816,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        30,
+        20
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "1ef9d6224d05edd9fad7d9c550fd2ebd11de1eeec78f828db66740e8ff8963c0",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001143200000797151,
+      "router_tick_p95_seconds": 0.000014962999983936243,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        80
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "57fda39903b5c12f21aca6299973bccc621d29bae85ed37dca85ae851f67a170",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 180,
+      "offered_by_phase": [
+        100,
+        80
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.2
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003515110000051891,
+      "router_tick_p95_seconds": 0.0003776899999934358,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        80
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        80
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "57fda39903b5c12f21aca6299973bccc621d29bae85ed37dca85ae851f67a170",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 180,
+      "offered_by_phase": [
+        100,
+        80
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.2
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00035748999999896114,
+      "router_tick_p95_seconds": 0.00038070499999776075,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        80
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        30
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "f16df41dc910948fbce1374b33561c7a09a747c62e921fce3a31b27c608b6dab",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 130,
+      "offered_by_phase": [
+        100,
+        30
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.075
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        20,
+        10
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2625,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003480404999862685,
+      "router_tick_p95_seconds": 0.0003783610000027693,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        30
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "1ef9d6224d05edd9fad7d9c550fd2ebd11de1eeec78f828db66740e8ff8963c0",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011276999998699466,
+      "router_tick_p95_seconds": 0.000013709999990396682,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        80,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "69f500151f33590cc18e7753e82f7be9e5bdaeeb27bce292dfc732ed26bd9f82",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 80,
+      "offered_by_phase": [
+        80,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.2,
+        0
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.1,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001634500000591288,
+      "router_tick_p95_seconds": 0.0003693980000036845,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        80,
+        0
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        20,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "2629359085cc1f106257ecbebb6918db47757bc69b71397cb4b0cd28fa6aaa16",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 20,
+      "offered_by_phase": [
+        20,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.05,
+        0
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.025,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000012694500000520748,
+      "router_tick_p95_seconds": 0.0000222240000198326,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        20,
+        0
+      ],
+      "worst_phase_reward": -0.05
+    },
+    {
+      "accepted_by_phase": [
+        30,
+        60
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "671d20e96eb55192b1d3b60be234e05b74497f57044bf8b096c0d7be0cfa6079",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 90,
+      "offered_by_phase": [
+        30,
+        60
+      ],
+      "phase_reward_per_decision": [
+        -0.075,
+        0.36
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        30,
+        20
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        60
+      ],
+      "reward_per_decision": 0.1425,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000015503499994906633,
+      "router_tick_p95_seconds": 0.000363598999996384,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        30,
+        0
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "1ef9d6224d05edd9fad7d9c550fd2ebd11de1eeec78f828db66740e8ff8963c0",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011331999999697473,
+      "router_tick_p95_seconds": 0.000013651000017489423,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        69
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "e9b7c9b4da593d576866fcee67dbba527e8333d9e7fee652c1dc4e87828f5115",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 169,
+      "offered_by_phase": [
+        100,
+        69
+      ],
+      "phase_reward_per_decision": [
+        0.192,
+        0.142
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        52,
+        37
+      ],
+      "reward_per_decision": 0.16699999999999998,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00022632200000316516,
+      "router_tick_p95_seconds": 0.00035696899999493326,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        48,
+        32
+      ],
+      "worst_phase_reward": 0.142
+    },
+    {
+      "accepted_by_phase": [
+        71,
+        50
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "c47f441bfa671ca966cbfde61dbbbf6b50e05d0c3b155bf444c3c803d7a60f46",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 121,
+      "offered_by_phase": [
+        71,
+        50
+      ],
+      "phase_reward_per_decision": [
+        0.1285,
+        0.1045
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        36,
+        27
+      ],
+      "reward_per_decision": 0.11649999999999999,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00018608099999539718,
+      "router_tick_p95_seconds": 0.0002598830000124508,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        35,
+        23
+      ],
+      "worst_phase_reward": 0.1045
+    },
+    {
+      "accepted_by_phase": [
+        47,
+        41
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "3f226b24b69f6b4e642e1903649dafc6ebe1ea9b42f6db826c7d39e98e3f0a29",
+      "input_world_sha256": "928becf22ee35582e4b827446715f95cae60d5368f05d935dde83c3895622d6e",
+      "observed_feedback_count": 88,
+      "offered_by_phase": [
+        47,
+        41
+      ],
+      "phase_reward_per_decision": [
+        0.095,
+        0.076
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        28,
+        18
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        25,
+        21
+      ],
+      "reward_per_decision": 0.08549999999999999,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00011442249999049636,
+      "router_tick_p95_seconds": 0.00036311800002408745,
+      "seed": 9104,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        22,
+        20
+      ],
+      "worst_phase_reward": 0.076
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "e5d3249081fc2a272b3c74ef98a6f17863bf5079d0e01472507c1ec67c609a2a",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011642999993455305,
+      "router_tick_p95_seconds": 0.000013669999987087067,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "c8dfe6e368c5c65e1393db137e9081fe1a7237a82c7d71b83f4940a8ad25841e",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00037094049999097933,
+      "router_tick_p95_seconds": 0.0004034789999991517,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "c8dfe6e368c5c65e1393db137e9081fe1a7237a82c7d71b83f4940a8ad25841e",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003707105000074762,
+      "router_tick_p95_seconds": 0.00039512700001864687,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        100
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "c8dfe6e368c5c65e1393db137e9081fe1a7237a82c7d71b83f4940a8ad25841e",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 200,
+      "offered_by_phase": [
+        100,
+        100
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        0.6
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        20,
+        0
+      ],
+      "regime": "cooperative",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        100
+      ],
+      "reward_per_decision": 0.6,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003702595000021347,
+      "router_tick_p95_seconds": 0.0003992130000085581,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0.6
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "e5d3249081fc2a272b3c74ef98a6f17863bf5079d0e01472507c1ec67c609a2a",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001135249999606458,
+      "router_tick_p95_seconds": 0.000013900999988436524,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        80,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "614eceb741af34bdc42b3785ed7fff7518567beb15744e9704289b91ce3c9eaa",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 80,
+      "offered_by_phase": [
+        80,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.2,
+        0
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.1,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001645449999898574,
+      "router_tick_p95_seconds": 0.00035479599998211597,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        80,
+        0
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        20,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "118698e8461268104f2c2a98187847af3dfe37ce97d63405e4564ab3748bcd30",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 20,
+      "offered_by_phase": [
+        20,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.05,
+        0
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.025,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00001250400001140406,
+      "router_tick_p95_seconds": 0.000023756000018693157,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        20,
+        0
+      ],
+      "worst_phase_reward": -0.05
+    },
+    {
+      "accepted_by_phase": [
+        30,
+        20
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "04fac7574476535cbbd10c856f1f6515208e6e3e9fa41b41f51f97172db4ddad",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 50,
+      "offered_by_phase": [
+        30,
+        20
+      ],
+      "phase_reward_per_decision": [
+        -0.075,
+        -0.05
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        30,
+        20
+      ],
+      "regime": "hostile",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.0625,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000014406999994776015,
+      "router_tick_p95_seconds": 0.00035743000000820757,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        30,
+        20
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "e5d3249081fc2a272b3c74ef98a6f17863bf5079d0e01472507c1ec67c609a2a",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011331999999697473,
+      "router_tick_p95_seconds": 0.000013360999986389288,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        80
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "43b360309262a127997142cdfc29c2ea48d01aae0cb73b14b4bd41fa024939f5",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 180,
+      "offered_by_phase": [
+        100,
+        80
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.2
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00035920300000213956,
+      "router_tick_p95_seconds": 0.00037633900001310394,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        80
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        80
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "43b360309262a127997142cdfc29c2ea48d01aae0cb73b14b4bd41fa024939f5",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 180,
+      "offered_by_phase": [
+        100,
+        80
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.2
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0003542704999972557,
+      "router_tick_p95_seconds": 0.00038020499999902313,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        80
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        30
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "64da65c946c69807a829cb89dff2ba6ba7a37d7660de998928cf9588003c1881",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 130,
+      "offered_by_phase": [
+        100,
+        30
+      ],
+      "phase_reward_per_decision": [
+        0.6,
+        -0.075
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        20,
+        10
+      ],
+      "regime": "collapse",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        100,
+        0
+      ],
+      "reward_per_decision": 0.2625,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00035125999998797397,
+      "router_tick_p95_seconds": 0.0003780810000080237,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        30
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "e5d3249081fc2a272b3c74ef98a6f17863bf5079d0e01472507c1ec67c609a2a",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011456999999381878,
+      "router_tick_p95_seconds": 0.000013321000011501383,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        80,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "614eceb741af34bdc42b3785ed7fff7518567beb15744e9704289b91ce3c9eaa",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 80,
+      "offered_by_phase": [
+        80,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.2,
+        0
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.1,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000016399999992700032,
+      "router_tick_p95_seconds": 0.00035186099998441023,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        80,
+        0
+      ],
+      "worst_phase_reward": -0.2
+    },
+    {
+      "accepted_by_phase": [
+        20,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "118698e8461268104f2c2a98187847af3dfe37ce97d63405e4564ab3748bcd30",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 20,
+      "offered_by_phase": [
+        20,
+        0
+      ],
+      "phase_reward_per_decision": [
+        -0.05,
+        0
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": -0.025,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000012603999991256387,
+      "router_tick_p95_seconds": 0.000019589000004316404,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        20,
+        0
+      ],
+      "worst_phase_reward": -0.05
+    },
+    {
+      "accepted_by_phase": [
+        30,
+        60
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "49bb972893f6fa62ae52f454b80492184b57bf01e8649d971114631ebcbebc48",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 90,
+      "offered_by_phase": [
+        30,
+        60
+      ],
+      "phase_reward_per_decision": [
+        -0.075,
+        0.36
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        30,
+        20
+      ],
+      "regime": "recovery",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        60
+      ],
+      "reward_per_decision": 0.1425,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.0000156840000045122,
+      "router_tick_p95_seconds": 0.00035995400000388145,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        30,
+        0
+      ],
+      "worst_phase_reward": -0.075
+    },
+    {
+      "accepted_by_phase": [
+        0,
+        0
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "e5d3249081fc2a272b3c74ef98a6f17863bf5079d0e01472507c1ec67c609a2a",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 0,
+      "offered_by_phase": [
+        0,
+        0
+      ],
+      "phase_reward_per_decision": [
+        0,
+        0
+      ],
+      "policy": "hold",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        0,
+        0
+      ],
+      "reward_per_decision": 0,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.000011297499995066573,
+      "router_tick_p95_seconds": 0.000013279999990345459,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        0,
+        0
+      ],
+      "worst_phase_reward": 0
+    },
+    {
+      "accepted_by_phase": [
+        100,
+        45
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "9b52deac8ab232ce54154c03c7b086a19e079b0ce08f979b2b24fa0d9d3ec0ac",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 145,
+      "offered_by_phase": [
+        100,
+        45
+      ],
+      "phase_reward_per_decision": [
+        0.16649999999999998,
+        0.0405
+      ],
+      "policy": "always_offer",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        49,
+        18
+      ],
+      "reward_per_decision": 0.1035,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00019670700001483965,
+      "router_tick_p95_seconds": 0.0003652119999912884,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        51,
+        27
+      ],
+      "worst_phase_reward": 0.0405
+    },
+    {
+      "accepted_by_phase": [
+        75,
+        38
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "ddd46f20001d0400cfd7de29c8ff8395e881c50f6e7129cf1051e5a2e43c6be2",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 113,
+      "offered_by_phase": [
+        75,
+        38
+      ],
+      "phase_reward_per_decision": [
+        0.1185,
+        0.057999999999999996
+      ],
+      "policy": "all_history",
+      "probes_by_phase": [
+        0,
+        0
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        36,
+        18
+      ],
+      "reward_per_decision": 0.08825,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00015787350000096012,
+      "router_tick_p95_seconds": 0.0002659019999953216,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        39,
+        20
+      ],
+      "worst_phase_reward": 0.057999999999999996
+    },
+    {
+      "accepted_by_phase": [
+        44,
+        28
+      ],
+      "acting_donors": 10,
+      "final_world_sha256": "de7af978afa064f4474b40d3bd5911b677fbd60f992d34bc0c4db05605dd0180",
+      "input_world_sha256": "c8158fdb9e0016aebe9f8b929780ee6136a70491e67f11075b58541fda125eea",
+      "observed_feedback_count": 72,
+      "offered_by_phase": [
+        44,
+        28
+      ],
+      "phase_reward_per_decision": [
+        0.06,
+        0.014999999999999998
+      ],
+      "policy": "risk_window",
+      "probes_by_phase": [
+        29,
+        19
+      ],
+      "regime": "mixed",
+      "registered_agents": 30,
+      "returned_by_phase": [
+        20,
+        10
+      ],
+      "reward_per_decision": 0.0375,
+      "rounds": 20,
+      "router_tick_p50_seconds": 0.00005979549999324263,
+      "router_tick_p95_seconds": 0.00035031000001595203,
+      "seed": 9105,
+      "ticks": 40,
+      "unreciprocated_by_phase": [
+        24,
+        18
+      ],
+      "worst_phase_reward": 0.014999999999999998
+    }
+  ],
+  "summary": [
+    {
+      "regime": "cooperative",
+      "hold": {
+        "reward": 0,
+        "phase0": 0,
+        "phase1": 0,
+        "failedTransfers": 0,
+        "probes": 0
+      },
+      "always_offer": {
+        "reward": 0.6,
+        "phase0": 0.6,
+        "phase1": 0.6,
+        "failedTransfers": 0,
+        "probes": 0
+      },
+      "all_history": {
+        "reward": 0.6,
+        "phase0": 0.6,
+        "phase1": 0.6,
+        "failedTransfers": 0,
+        "probes": 0
+      },
+      "risk_window": {
+        "reward": 0.6,
+        "phase0": 0.6,
+        "phase1": 0.6,
+        "failedTransfers": 0,
+        "probes": 20
+      }
+    },
+    {
+      "regime": "hostile",
+      "hold": {
+        "reward": 0,
+        "phase0": 0,
+        "phase1": 0,
+        "failedTransfers": 0,
+        "probes": 0
+      },
+      "always_offer": {
+        "reward": -0.1,
+        "phase0": -0.2,
+        "phase1": 0,
+        "failedTransfers": 80,
+        "probes": 0
+      },
+      "all_history": {
+        "reward": -0.025,
+        "phase0": -0.05,
+        "phase1": 0,
+        "failedTransfers": 20,
+        "probes": 0
+      },
+      "risk_window": {
+        "reward": -0.0625,
+        "phase0": -0.075,
+        "phase1": -0.05,
+        "failedTransfers": 50,
+        "probes": 50
+      }
+    },
+    {
+      "regime": "collapse",
+      "hold": {
+        "reward": 0,
+        "phase0": 0,
+        "phase1": 0,
+        "failedTransfers": 0,
+        "probes": 0
+      },
+      "always_offer": {
+        "reward": 0.2,
+        "phase0": 0.6,
+        "phase1": -0.2,
+        "failedTransfers": 80,
+        "probes": 0
+      },
+      "all_history": {
+        "reward": 0.2,
+        "phase0": 0.6,
+        "phase1": -0.2,
+        "failedTransfers": 80,
+        "probes": 0
+      },
+      "risk_window": {
+        "reward": 0.2625,
+        "phase0": 0.6,
+        "phase1": -0.075,
+        "failedTransfers": 30,
+        "probes": 30
+      }
+    },
+    {
+      "regime": "recovery",
+      "hold": {
+        "reward": 0,
+        "phase0": 0,
+        "phase1": 0,
+        "failedTransfers": 0,
+        "probes": 0
+      },
+      "always_offer": {
+        "reward": -0.1,
+        "phase0": -0.2,
+        "phase1": 0,
+        "failedTransfers": 80,
+        "probes": 0
+      },
+      "all_history": {
+        "reward": -0.025,
+        "phase0": -0.05,
+        "phase1": 0,
+        "failedTransfers": 20,
+        "probes": 0
+      },
+      "risk_window": {
+        "reward": 0.1425,
+        "phase0": -0.075,
+        "phase1": 0.36,
+        "failedTransfers": 30,
+        "probes": 50
+      }
+    },
+    {
+      "regime": "mixed",
+      "hold": {
+        "reward": 0,
+        "phase0": 0,
+        "phase1": 0,
+        "failedTransfers": 0,
+        "probes": 0
+      },
+      "always_offer": {
+        "reward": 0.1259,
+        "phase0": 0.16409999999999997,
+        "phase1": 0.08769999999999997,
+        "failedTransfers": 78.8,
+        "probes": 0
+      },
+      "all_history": {
+        "reward": 0.10129999999999999,
+        "phase0": 0.1275,
+        "phase1": 0.07509999999999999,
+        "failedTransfers": 59.6,
+        "probes": 0
+      },
+      "risk_window": {
+        "reward": 0.061549999999999994,
+        "phase0": 0.068,
+        "phase1": 0.055099999999999996,
+        "failedTransfers": 41,
+        "probes": 47.2
+      }
+    }
+  ]
+}
